@@ -26,87 +26,6 @@
 
 
 
-    @media (max-width: 1920px) {
-      .offcanvas-collapse {
-        position: fixed;
-        top: 0px;
-        /* Height of navbar */
-        bottom: 0;
-        right: 100%;
-        width: 29%;
-        padding-right: 1rem;
-        padding-left: 1rem;
-        overflow-y: auto;
-        visibility: hidden;
-        background-color: #000000c2;
-        padding-top: 60px;
-        height: 100vh;
-        transition: transform .3s ease-in-out, visibility .3s ease-in-out;
-      }
-
-      .offcanvas-collapse.open {
-        visibility: visible;
-        transform: translateX(99%);
-      }
-    }
-
-    .nav-scroller {
-      position: relative;
-      z-index: 2;
-      height: 2.75rem;
-      overflow-y: hidden;
-    }
-
-    .nav-scroller .nav {
-      display: flex;
-      flex-wrap: nowrap;
-      padding-bottom: 1rem;
-      margin-top: -1px;
-      overflow-x: auto;
-      color: rgba(255, 255, 255, .75);
-      text-align: center;
-      white-space: nowrap;
-      -webkit-overflow-scrolling: touch;
-    }
-
-    .nav-underline .nav-link {
-      padding-top: .75rem;
-      padding-bottom: .75rem;
-      font-size: .875rem;
-      color: #6c757d;
-    }
-
-    .nav-underline .nav-link:hover {
-      color: #007bff;
-    }
-
-    .nav-underline .active {
-      font-weight: 500;
-      color: #343a40;
-    }
-
-    .text-white-50 {
-      color: rgba(255, 255, 255, .5);
-    }
-
-    .bg-purple {
-      background-color: #6f42c1;
-    }
-
-    .crs_nv.open .navbar-toggler {
-      rotate: 90deg;
-      transition: transform .2s ease-in-out;
-    }
-    
-    
-    @media (max-width: 480px) {
-    
-          .offcanvas-collapse {
-
-        width: 59%;
-       
-      }
-    }
   </style>
 
 
@@ -121,7 +40,7 @@
 
 
   <div class=" container-fluid  max-w-1366 p-0 cnav rel_pos bg-info">
-    <nav class="navbar sticky-top navbar-light crs_nv cu_bg-transparent  abl_pos navbar-expand-xxl znavbar-expand-md">
+    <nav class="navbar sticky-top navbar-light crs_nv cu_bg-transparent  abl_pos navbar-expand-xxxl znavbar-expand-md">
       <div class="container scrl_bg p-0">
         <a class="navbar-brand" href="#"><img class="img-fluid mx-ht-50" src="images/logo-l.png"></a>
         <div class="right_top_box tex text-right zbg-info">  
@@ -183,7 +102,18 @@
               <a class="nav-link" href="#"> ALL Books</a>
             </li>
 
-
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                
+              </ul>
+            </li>
 
           </ul>
         </div>
@@ -407,8 +337,8 @@
 
   <section class="dels_of_day">
 
-    <div class="container zbg-danger mt-5">
-      <h2 class="text-center sec_hedr he_ading und_rline mt-5 pt-5">DEALS OF THE DAY</h2>
+    <div class="container zbg-danger ">
+      <h2 class="text-center sec_hedr he_ading und_rline ">DEALS OF THE DAY</h2>
       <div class="cu_row gry_bg product_pic">
 
 
@@ -680,8 +610,8 @@
 
           <div class="col-12 col-md-6 bg-info "> <img class="img-fluid  " src="images/left-img.png" alt="AAAAA" /></div>
 
-          <div class="col-12 col-md-6 d-flex justify-content-center zbg-success">
-            <div class="my-auto p-3">
+          <div class="col-12 col-md-6 d-flex justify-content-end flex-column">
+            <div class="zmy-auto p-3">
               <h4>Lorem Ipsum</h4>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                 industry's standard dummy text ever since th</p>
@@ -699,8 +629,8 @@
 
 
 
-          <div class="col-12 col-md-6 d-flex justify-content-center zbg-success">
-            <div class="my-auto p-3">
+          <div class="col-12 col-md-6 d-flex justify-content-end flex-column">
+            <div class="zmy-auto p-3">
               <h4>Lorem Ipsum</h4>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                 industry's standard dummy text ever since th</p>
@@ -757,7 +687,163 @@
   <section class="new_arrival pt-3">
     <div class="container">
       <h2 class="text-center sec_hedr he_ading und_rline">NEW ARRIVALS</h2>
-      <div class="row">
+
+
+      <div class="cu_row gry_bg product_pic">
+
+
+
+        <div class="col-12 col-md-12 zd-flex zflex-wrap zjustify-content-between img_fluid maindiv  ">
+ 
+
+          <div class="  cnt_dtl_pic_box zborder p-0 mb-3 tab">
+            <div class="cont_dtl_pic efct_zom   effect effect-three col3-block-height">
+              <!-- <img class="img-fluid  " src="images/banner1.png" alt="AAAAA" /> -->
+              <div class=" ">
+                <img class="img-fluid  " src="images/hat2.png" alt="AAAAA" />
+                <div class="tab-text">
+                 
+                  <p class=""> 
+                    <a href="#"> <i class="fas fa-eye"></i> </a>
+                     <a href="#"><i class="fas fa-cart-plus"></i> </a> 
+                     <!-- <a href="#"><i class="fab fa-youtube-square"></i></a> -->
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="cont_dtl_pic_dec efct_zom bg_pic_left bg-white py-2  px-2">
+              <p class="lrg_txt m-0">
+                Product price
+              </p>
+
+
+              <p class="m-0">
+
+                $ 299.00
+              </p>
+            </div>
+
+
+
+          </div>
+
+          <div class="  cnt_dtl_pic_box zborder p-0 mb-3 tab " >
+            <div class="cont_dtl_pic efct_zom  effect effect-three col3-block-height">
+              <!-- <img class="img-fluid  " src="images/banner1.png" alt="AAAAA" /> -->
+              <div class=" ">
+                <img class="img-fluid  " src="images/new-item1.png" alt="AAAAA" />
+                <div class="tab-text">
+                 
+                  <p class=""> 
+                    <a href="#"> <i class="fas fa-eye"></i> </a>
+                     <a href="#"><i class="fas fa-cart-plus"></i> </a> 
+                     <!-- <a href="#"><i class="fab fa-youtube-square"></i></a> -->
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="cont_dtl_pic_dec efct_zom bg_pic_left bg-white py-2  px-2">
+              <p class="lrg_txt m-0">
+                Product price
+              </p>
+
+
+              <p class="m-0">
+
+                $ 299.00
+              </p>
+            </div>
+
+
+
+          </div>
+          <div class="  cnt_dtl_pic_box zborder p-0 mb-3 tab ">
+            <div class="cont_dtl_pic efct_zom  effect effect-three col3-block-height">
+              <!-- <img class="img-fluid  " src="images/banner1.png" alt="AAAAA" /> -->
+              <div class=" ">
+                <img class="img-fluid  " src="images/new-item2.png" alt="AAAAA" />
+                <div class="tab-text">
+                 
+                  <p class=""> 
+                    <a href="#"> <i class="fas fa-eye"></i> </a>
+                     <a href="#"><i class="fas fa-cart-plus"></i> </a> 
+                     <!-- <a href="#"><i class="fab fa-youtube-square"></i></a> -->
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="cont_dtl_pic_dec efct_zom bg_pic_left bg-white py-2  px-2">
+              <p class="lrg_txt m-0">
+                Product price
+              </p>
+
+
+              <p class="m-0">
+
+                $ 299.00
+              </p>
+            </div>
+
+
+
+          </div>
+          <div class="  cnt_dtl_pic_box zborder p-0 mb-3 tab ">
+            <div class="cont_dtl_pic efct_zom  effect effect-three col3-block-height">
+              <!-- <img class="img-fluid  " src="images/banner1.png" alt="AAAAA" /> -->
+              <div class=" ">
+                <img class="img-fluid  " src="images/new-item3.png" alt="AAAAA" />
+                <div class="tab-text">
+                 
+                  <p class=""> 
+                    <a href="#"> <i class="fas fa-eye"></i> </a>
+                     <a href="#"><i class="fas fa-cart-plus"></i> </a> 
+                     <!-- <a href="#"><i class="fab fa-youtube-square"></i></a> -->
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="cont_dtl_pic_dec efct_zom bg_pic_left bg-white py-2  px-2">
+              <p class="lrg_txt m-0">
+                Product price
+              </p>
+
+
+              <p class="m-0">
+
+                $ 299.00
+              </p>
+            </div>
+
+
+
+          </div>
+         
+          
+       
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+      </div>
+      <!-- <div class="row">
 
         <div class="d-flex flex-wrap text-white">
 
@@ -813,7 +899,7 @@
           </div>
 
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 
@@ -832,41 +918,41 @@
       </ol> -->
       <div class="carousel-inner">
         <div class="testimoni_sldr_item carousel-item active d-flex" >
-          <div class="p-4 bounceIn col-12 col-md-2 my-auto">
+          <div class="p-4 bounceIn col-2 col-md-2 my-auto">
             <span class="testi_avtar testmoni_circle"> 
               <img class="img-fluid " src="images/testmoni_circle.png"/>
               
             </span>
           </div>
-          <div class="fadeInRight testi_content my-auto">  
-            <div><img class="img-fluid " src="images/qte_icn.png"/></div>
+          <div class=" col-10 col-md-10 fadeInRight testi_content my-auto">  
+            <div><img class="img-fluid qte_icn" src="images/qte_icn.png"/></div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, autem!</p>
             <p>Lorem ipsum </p>
           </div>
         </div>
         <div class= "testimoni_sldr_item carousel-item d-flex" >
-          <div class="p-4 bounceIn col-12 col-md-2 my-auto">
+          <div class="p-4 bounceIn col-2 col-md-2 my-auto">
             <span class="testi_avtar testmoni_circle"> 
               <img class="img-fluid " src="images/testmoni_circle.png"/>
               
               
             </span>
           </div>
-            <div class="fadeInRight testi_content my-auto">  
-              <div><img class="img-fluid " src="images/qte_icn.png"/></div>
+            <div class=" col-10 col-md-10 fadeInRight testi_content my-auto">  
+              <div><img class="img-fluid qte_icn" src="images/qte_icn.png"/></div>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, autem!</p>
               <p>Lorem ipsum </p>
             </div>
         </div>
         <div class= "testimoni_sldr_item carousel-item d-flex" >
-          <div class="p-4 bounceIn col-12 col-md-2 my-auto">
+          <div class="p-4 bounceIn col-2 col-md-2 my-auto">
             <span class="testi_avtar testmoni_circle"> 
               <img class="img-fluid " src="images/testmoni_circle.png"/>
               
             </span>
           </div>
-          <div class="fadeInRight testi_content my-auto">  
-            <div><img class="img-fluid " src="images/qte_icn.png"/></div>
+          <div class=" col-10 col-md-10 fadeInRight testi_content my-auto">  
+            <div><img class="img-fluid qte_icn" src="images/qte_icn.png"/></div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, autem!</p>
             <p>Lorem ipsum </p>
           </div>
@@ -891,125 +977,139 @@
 </section>
 
 
-<section class="our_blog">
+<section class="our_blog mt-0">
     
   <div class="blog_bg">   
-       <div class="container">
-          <h2 class="text-center sec_hedr he_ading und_rline">OUR BLOGS</h2>
-           
-           
-           <div class="d-flex flex-wrap text-white">
-           
-           <div  class="col-12 col-md-6 text-left">
-                <img class="img-fluid " src="images/blogs-img1.png">
-               </div>
-               
-               <div  class="col-12 col-md-6 text-left  bg-blg_cnt">
-                   
-                         <div id="carouselExampleCaptions" class="carousel slide h-100" data-bs-ride="carousel">
+    <div class="container">
+       <h2 class="text-center sec_hedr he_ading und_rline">OUR BLOGS</h2>
+        
+        
+        <div class="d-flex flex-wrap text-white">
+        
+        <div  class="col-12 col-md-6 text-left d-flex">
+             <img class="img-fluid my-auto " src="images/blogs-img1.png">
+            </div>
+            
+            <div  class="col-12 col-md-6 text-left  bg-blg_cnt">
+                
+                      <div id="carouselExampleCaptions" class="carousel slide h-100" data-bs-ride="carousel">
 <div class="carousel-indicators">
-  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active m-2" aria-current="true" aria-label="Slide 1"></button>
-  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="m-2" aria-label="Slide 2"></button>
-  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="m-2" aria-label="Slide 3"></button>
+<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active p-2" aria-current="true" aria-label="Slide 1"></button>
+<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="p-2" aria-label="Slide 2"></button>
+<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="p-2" aria-label="Slide 3"></button>
 </div>
 <div class="carousel-inner h-100">
-  <div class="carousel-item  active  h-100">
-    <div class="blog_cont">
-        <h4> Lorem Ipsum simple 1</h4>
-        <p>Lorem Ipsum simple 1</p>
-      </div>
-      
-      <div class="blog_pst_txt">
-        <h4> Lorem Ipsum simple 1</h4>
-        <p>Lorem Ipsum simple 1</p>
-          <a class="btn button btn-lg 
-   mb-4 mt-2 btn-white btn-animate border-2 btn_dark" href="#" role="button"><span>Explore Now </span></a>
-      </div>
-      
-       <div class="img_box">  
-              <img src="images/blog2.png" class=" img-fluid " alt="...">
+<div class="carousel-item  active  h-100">
+ <div class="blog_cont">
+     <h3> Lorem Ipsum simple 1</h3>
+     <div class="d-flex">
+         <p class=""><span><img class="img-fluid mx-ht-50" src="images/name-icon.png"></span><span>Lorem Ipsum </span></p>
+         <p class=""><span><img class="img-fluid mx-ht-50" src="images/time-icon.png"></span><span>Lorem Ipsum </span></p>
+     </div>
+      <h4> Lorem Ipsum simple 1</h4>
+   </div>
+   
+   <div class="blog_pst_txt">
+     <h4> Lorem Ipsum simple 1</h4>
+     <p>Lorem Ipsum simple 1</p>
+       <a class="btn button btn-lg 
+mb-4 mt-2 btn-white btn-animate border-2 btn_dark" href="#" role="button"><span>Read more </span></a>
+   </div>
+   
+    <div class="img_box">  
+           <img src="images/blog2.png" class=" img-fluid " alt="...">
 
-      </div>
-  </div>
-    
-    <div class="carousel-item h-100">
-    <div class="blog_cont">
-        <h4> Lorem Ipsum simple 1</h4>
-        <p>Lorem Ipsum simple 1</p>
-      </div>
-      
-      <div class="blog_pst_txt">
-        <h4> Lorem Ipsum simple 1</h4>
-        <p>Lorem Ipsum simple 1</p>
-          <a class="btn button btn-lg 
-   mb-4 mt-2 btn-white btn-animate border-2 btn_dark" href="#" role="button"><span>Explore Now </span></a>
-      </div>
-      
-       <div class="img_box">  
-              <img src="images/blog2.png" class=" img-fluid " alt="...">
+   </div>
+</div>
+ 
+ <div class="carousel-item h-100">
+ <div class="blog_cont">
+     <h3> Lorem Ipsum simple 1</h3>
+     
+     <div class="d-flex">
+         <p class=""><span><img class="img-fluid mx-ht-50" src="images/name-icon.png"></span><span>Lorem Ipsum </span></p>
+         <p class=""><span><img class="img-fluid mx-ht-50" src="images/time-icon.png"></span><span>Lorem Ipsum </span></p>
+     </div>
+      <h4> Lorem Ipsum simple 1</h4>
+   </div>
+   
+   <div class="blog_pst_txt">
+     <h4> Lorem Ipsum simple 1</h4>
+      <p>Lorem Ipsum simple 1</p>
+       <a class="btn button btn-lg 
+mb-4 mt-2 btn-white btn-animate border-2 btn_dark" href="#" role="button"><span>Read more </span></a>
+   </div>
+   
+    <div class="img_box">  
+           <img src="images/blog2.png" class=" img-fluid " alt="...">
 
-      </div>
-  </div>
+   </div>
+</div>
+ 
+ 
+ <div class="carousel-item    h-100">
+ <div class="blog_cont">
+     <h3> Lorem Ipsum simple 1</h3>
+     <div class="d-flex">
+         <p class=""><span><img class="img-fluid mx-ht-50" src="images/name-icon.png"></span><span>Lorem Ipsum </span></p>
+         <p class=""><span><img class="img-fluid mx-ht-50" src="images/time-icon.png"></span><span>Lorem Ipsum </span></p>
+     </div>
+      <h4> Lorem Ipsum simple 1</h4>
     
-    
-    <div class="carousel-item    h-100">
-    <div class="blog_cont">
-        <h4> Lorem Ipsum simple 1</h4>
-        <p>Lorem Ipsum simple 1</p>
-      </div>
-      
-      <div class="blog_pst_txt">
-        <h4> Lorem Ipsum simple 1</h4>
-        <p>Lorem Ipsum simple 1</p>
-          <a class="btn button btn-lg 
-   mb-4 mt-2 btn-white btn-animate border-2 btn_dark" href="#" role="button"><span>Explore Now </span></a>
-      </div>
-      
-       <div class="img_box">  
-              <img src="images/blog2.png" class=" img-fluid " alt="...">
+   </div>
+   
+   <div class="blog_pst_txt">
+     <h4> Lorem Ipsum simple 1</h4>
+     <p>Lorem Ipsum simple 1</p>
+       <a class="btn button btn-lg 
+mb-4 mt-2 btn-white btn-animate border-2 btn_dark" href="#" role="button"><span>Read more </span></a>
+   </div>
+   
+    <div class="img_box">  
+           <img src="images/blog2.png" class=" img-fluid " alt="...">
 
-      </div>
-  </div>
-  
-  
+   </div>
+</div>
+
+
 </div>
 <!--<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-  <span class="visually-hidden">Previous</span>
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Previous</span>
 </button>
 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-  <span class="visually-hidden">Next</span>
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Next</span>
 </button>-->
 </div>
-               </div>
-           
-           
-           
-           </div>
+            </div>
+        
+        
+        
+        </div>
 
-      </div>
-      </div>
+   </div>
+   </div>
  
   
   
   </section>
 
-  <section class="deal-sec pt-3">
+  <section class="deal-sec mt-0">
     <div class="container">
       <div class="row">
 
-        <div class="d-flex flex-wrap text-white">
+        <div class="d-flex flex-wrap ">
           <div class="col-12 col-md-7 copyright-text text-left d-flex flex-wrap justify-content-center">
 
             <div class="pt-8 d-flex justify-content-center">
-              <div class="my-auto">
-                <h3>deal of the month</h3>
-                <p class="mt-3 mb-5 text-left text-box">
+              <div class="my-auto deal_sec">
+                <h3>deal of the  <b>month</b></h3>
+                <p class="mt-3 mb-5 text-right text-box">
 
 
                   <a class="btn btn-lg bg_light
-                   mb-4 mt-2 btn-white btn-animate border-2" href="#" role="button">Request a quote</a>
+                   mb-4 mt-2 btn-white btn-animate border-2 btn_secondary" href="#" role="button">Request a quote</a>
 
                 </p>
               </div>
@@ -1031,7 +1131,7 @@
     </div>
   </section>
 
-  <section class="footer-sec pt-3">
+  <section class="footer-sec pt-5 pb-5 mt-0">
     <div class="container">
       <div class="row">
 
