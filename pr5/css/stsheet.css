@@ -256,7 +256,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#15aee4', end
   
 	/* text-align: center; */
 	/* font-size: 28px; */
-	padding-inline: 25px;
+	padding-inline: 1.6rem;
 	 
 	transition: all 0.5s;
 	cursor: pointer;
@@ -405,6 +405,7 @@ margin-left: 7px;
 .shop-nw{
 	color: rgba(var(--dark), 1);
 	font-size: 1rem;
+	margin-left: 25px;
 }
 
 .sec_hedr{
@@ -426,7 +427,10 @@ margin-left: 7px;
 	background: rgb(245 245 245);
  }
 
-
+ .shp_cart{
+	margin-right: 3rem;
+ }
+ 
 
  .testimoni_bg{
 	background: url(../images/testimonial_bg.png);
@@ -487,9 +491,9 @@ margin-left: 7px;
  .modal-content{
 	background-color: inherit;
  }
- *{
+ /* *{
 	box-sizing: border-box;
-  }
+  } */
   .modal{
    
    
@@ -696,8 +700,8 @@ margin-left: 7px;
 	transform: translate3d(25px, 0, 0);
 	-webkit-transform: translate3d(25px, 0, 0);
 	transition: all .35s;
-	font-family: Oswald;
-	font-size: 1.6rem
+	font-size: 1.6rem;
+	color: rgba(var(--dark), 1);
 }
 
 /* .shop-nw{
@@ -835,6 +839,36 @@ margin-left: 7px;
 
 
 /* product hover effect  end */
+
+
+
+/*  BLOG SHILPI  */
+
+.blog_bg{
+	background: url(../images/blog_bg.png);
+	aspect-ratio: 3.1 / 1;
+	background-size: 100%;
+	padding-block: 50px;
+ }
+.blog_cont{
+    background: #fff;
+    aspect-ratio: 3.1 / 1;
+    color:#ccc;
+    padding: 40px 15px;
+}
+.blog_pst_txt{
+    color: #fff;
+    padding: 20px 15px;
+}
+.bg-blg_cnt{
+    background: #dda7a7;
+}
+.img_box {
+    position: absolute;
+    bottom: 30px;
+    left: 60%;
+/*    border: 5px solid red;*/
+}
 
 /* ************************************ */
 
@@ -1058,10 +1092,99 @@ background: rgba(var(--dark), 0.5); */
 
 
 
+
+
+	/* asos s */
+
+	
+.as_item {
+	/* width: 200px;
+	height: 200px; */
+	margin: 50px auto;
+	padding-top: 75px;
+	background: #ccc;
+	text-align: center;
+	color: #FFF;
+	font-size: 3em;
+  }
+  
+  /* Animations */
+  [data-aos="example-anim1"] {
+	-webkit-transform: skewX(45deg);
+			transform: skewX(45deg);
+	opacity: 0;
+	-webkit-transition-property: opacity, -webkit-transform;
+	transition-property: opacity, -webkit-transform;
+	transition-property: transform, opacity;
+	transition-property: transform, opacity, -webkit-transform;
+  }
+  [data-aos="example-anim1"].aos-animate {
+	-webkit-transform: skewX(0);
+			transform: skewX(0);
+	opacity: 1;
+  }
+  
+  [data-aos="example-anim2"] {
+	background: red;
+	-webkit-transition-property: background;
+	transition-property: background;
+  }
+  [data-aos="example-anim2"].aos-animate {
+	background: green;
+  }
+  
+  [data-aos="example-anim3"] {
+	-webkit-transform: rotate(360deg);
+			transform: rotate(360deg);
+	opacity: 0;
+	-webkit-transition-property: opacity, -webkit-transform;
+	transition-property: opacity, -webkit-transform;
+	transition-property: transform, opacity;
+	transition-property: transform, opacity, -webkit-transform;
+  }
+  [data-aos="example-anim3"].aos-animate {
+	-webkit-transform: rotate(0);
+			transform: rotate(0);
+	opacity: 1;
+  }
+	/* asos e */
+
+
+
  @media( max-width : 980px ) {
 
 }
  @media( max-width : 580px ) {
+
+	.carousel-caption {
+		right: 12%;
+		bottom: -4.9rem;
+		left: 5%;
+	
+	}
+
+	h1 {
+		font-size: 2.3rem;
+		font-weight: 800;
+	
+	}
+
+	.carousel-indicators {
+		 
+		justify-content: left;
+		 
+	}
+
+
+	.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+		 
+		flex-wrap: revert;
+		 
+	}
+
+	
+	
+	
 
 }
  @media( max-width : 768px ) {
@@ -1073,14 +1196,51 @@ html {
 
 	.cnt_dtl_pic_box {
 		font-size: clamp(14px, 1rem, 50px) !important;
-		border: 2px solid green;
-		flex: 0 1 calc(50% - 20px);
+		/* border: 2px solid green; */
+		flex: 0 1 calc(100% - 120px);
 	}
+
+	.cu_row.product_pic .cnt_dtl_pic_box {
+		/* border: 2px solid green; */
+		--mrg: 8px;
+		margin: var(--mrg);
+		--clmn: 1;
+		--gp: 119px;
+		--wd: calc( 100% / var(--clmn) - (var(--mrg))*3 );
+		flex: 0 1 calc(var(--wd) - var(--gp) );
+	}
+
+	.round_yellow {
+		
+		padding: 1px 6px 3px 6px;
+		 
+	}
+
+	.shp_cart span {
+		 
+		width: 18px;
+		height: 18px;
+		 
+		line-height: 1.5;
+		 
+		font-size: 10px;
+	}
+	
 }
  @media( max-width : 480px ) {
 
 html {
 	font-size:60%;
+}
+
+.navbar-brand {
+		
+	width: 75px;
+}
+
+.round_yellow {
+    
+    margin-right: 7px;
 }
 }
  @media( max-width : 380px ) {
