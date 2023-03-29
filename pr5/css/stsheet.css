@@ -437,7 +437,7 @@ margin-left: 7px;
 	aspect-ratio: 3.1 / 1;
 	background-size: 100%;
  }
-
+ 
  .testmoni_circle{
 	background: url(../images/testi_icn1.png);
 	border-radius: 50%;
@@ -844,6 +844,64 @@ margin-left: 7px;
 
 /*  BLOG SHILPI  */
 
+
+.blog_bg{
+	background: url(../images/blog_bg.png) no-repeat;
+	aspect-ratio: 3.1 / 1;
+	background-size: cover;
+	padding-block: 50px;
+ }
+.blog_cont{
+    background: #fff;
+    aspect-ratio: 3.1 / 1;
+    color:#555;
+    padding: 40px 15px;
+}
+
+.blog_cont > div p span + span {
+      color: #555;
+    padding: 0px 15px 0 0;
+   /* border: 1px solid red;*/
+    font-style: italic;
+    font-weight: 300;
+    font-size: 12px;
+    padding-inline: 5px;
+}
+.blog_pst_txt{
+    color: #fff;
+    padding: 20px 15px;
+}
+.bg-blg_cnt{
+    background: #dda7a7;
+}
+.img_box {
+    position: absolute;
+    bottom: 30px;
+    left: 60%;
+/*    border: 5px solid red;*/
+}
+
+.blog_bg .carousel-indicators button{
+    margin: 10px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    border: none;
+}
+.blog_bg .carousel-indicators button.active{
+    background: rgba(var(--dark));
+}
+
+.deal_sec h3{
+    font-weight: 400;
+    font-size: 60px;
+    color: rgba(var(--primary), 1);
+}
+h3 .bold-font{
+    font-weight: 700;
+}
+
+/* 
 .blog_bg{
 	background: url(../images/blog_bg.png);
 	aspect-ratio: 3.1 / 1;
@@ -867,8 +925,20 @@ margin-left: 7px;
     position: absolute;
     bottom: 30px;
     left: 60%;
-/*    border: 5px solid red;*/
 }
+
+.deal_sec h3{
+    font-weight: 400;
+    font-size: 60px;
+    color: rgba(var(--primary), 1);
+}
+h3 .bold-font{
+    font-weight: 700;
+} */
+
+
+
+
 
 /* ************************************ */
 
@@ -901,6 +971,11 @@ margin-left: 7px;
     border-radius: 50px;
 	background:  rgba(var(--dark), 1);
     color:  rgba(var(--primary), 1);
+}
+.btn_secondary {
+    border-radius: 50px;
+	background:  var(--secondary-dark);
+    color:  rgba(var(--dark), 1);
 }
 .bg_light {
     margin: -3px !important;
@@ -1043,9 +1118,11 @@ nav.sticky .navbar-header a {
 	
 	.navbar-light .navbar-nav .nav-link{
 		color:  rgba(var(--primary), 1);
-		    font-size: 20px;
+		    font-size: 1.2rem;
 		text-transform: uppercase;}
-
+		.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+			color: var(--secondary);
+		}
 .cnav.msticky{
 	position: inherit;}
 .cnav.msticky .abl_pos{
@@ -1150,6 +1227,85 @@ background: rgba(var(--dark), 0.5); */
 	/* asos e */
 
 
+    @media (max-width: 1920px) {
+		.offcanvas-collapse {
+		  position: fixed;
+		  top: 0px;
+		  /* Height of navbar */
+		  bottom: 0;
+		  right: 100%;
+		  width: 29%;
+		  padding-right: 1rem;
+		  padding-left: 1rem;
+		  overflow-y: auto;
+		  visibility: hidden;
+		  background-color: #000000c2;
+		  padding-top: 60px;
+		  height: 100vh;
+		  transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+		}
+  
+		.offcanvas-collapse.open {
+		  visibility: visible;
+		  transform: translateX(99%);
+		}
+	  }
+  
+	  .nav-scroller {
+		position: relative;
+		z-index: 2;
+		height: 2.75rem;
+		overflow-y: hidden;
+	  }
+  
+	  .nav-scroller .nav {
+		display: flex;
+		flex-wrap: nowrap;
+		padding-bottom: 1rem;
+		margin-top: -1px;
+		overflow-x: auto;
+		color: rgba(255, 255, 255, .75);
+		text-align: center;
+		white-space: nowrap;
+		-webkit-overflow-scrolling: touch;
+	  }
+  
+	  .nav-underline .nav-link {
+		padding-top: .75rem;
+		padding-bottom: .75rem;
+		font-size: .875rem;
+		color: #6c757d;
+	  }
+  
+	  .nav-underline .nav-link:hover {
+		color: #007bff;
+	  }
+  
+	  .nav-underline .active {
+		font-weight: 500;
+		color: #343a40;
+	  }
+  
+	  .text-white-50 {
+		color: rgba(255, 255, 255, .5);
+	  }
+  
+	  .bg-purple {
+		background-color: #6f42c1;
+	  }
+  
+	  .crs_nv.open .navbar-toggler {
+		rotate: 90deg;
+		transition: transform .2s ease-in-out;
+	  }
+	/* side nav */
+	
+
+	 
+	
+	/* side nav s */
+
+
 
  @media( max-width : 980px ) {
 
@@ -1183,7 +1339,11 @@ background: rgba(var(--dark), 0.5); */
 	}
 
 	
-	
+	.offcanvas-collapse {
+
+        width: 59%;
+       
+      }
 	
 
 }
@@ -1191,8 +1351,8 @@ background: rgba(var(--dark), 0.5); */
 html {
 	font-size:70%;
 }
-.navbar-collapse{
-	background:#ccc;}
+/* .navbar-collapse{
+	background:#ccc;} */
 
 	.cnt_dtl_pic_box {
 		font-size: clamp(14px, 1rem, 50px) !important;
@@ -1225,6 +1385,22 @@ html {
 		 
 		font-size: 10px;
 	}
+
+	.qte_icn{
+	width: 20px;
+	margin-top: 10px;
+ }
+
+ .testmoni_circle{
+	min-width: 60px;
+	
+
+ }
+
+ .testi_content > p{
+	color:red;
+	margin-top: 10px;
+ }
 	
 }
  @media( max-width : 480px ) {
