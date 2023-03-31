@@ -137,13 +137,52 @@ a:focus {
 
 
     .slick-prev:before,  .slick-next:before {
-	color: #555a6e;
+	color: rgba(var(--dark), 1);
 }
 
 
 
 
 /******* slider end ********/
+/******* slick start ********/
+
+ 
+.slick-arrow.slick-disabled:before{
+	opacity:1;
+	/* color:red; */
+}
+
+
+
+
+
+  .slick_with_gap .slick-slide {
+ 
+ margin-right: 20px;
+/* border: 2px solid red; */
+
+
+}
+/* .slick_with_gap .slick-slide > div {
+
+ overflow: hidden;
+} */
+
+.slick_with_gap .slick-slide img {
+ 
+  width: 100%;
+}
+.slick_with_gap .slick-list.draggable {
+ margin-right: -20px;
+}
+
+.slick-dots li button:before{
+	font-size: 20px;
+}
+/* .slick_with_gap > div > div{
+}	   */
+
+/******* slick end ********/
 
 
 
@@ -174,9 +213,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#15aee4', end
 		border: 1px solid #ccc;
 	}
 
-	.cnt_dtl_pic_box{
+	/* .cnt_dtl_pic_box{
 	  
-	  /* border: 2px solid green; */
 	  --mrg: 8px;
 	  margin: var(--mrg);
 	  --clmn: 3;
@@ -187,7 +225,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#15aee4', end
 	 
 	  flex: 0 1  calc(var(--wd) - var(--gp) );
 	  
-	}
+	} */
 	.cu_row{
 	
 	  /* margin-right: -73px;
@@ -374,7 +412,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#15aee4', end
 .cu_row.product_pic  .cnt_dtl_pic_box{
 	  
 	/* border: 2px solid green; */
-	--mrg: 8px;
+	--mrg: 11px;
+	margin: var(--mrg);
+	--clmn: 4;
+	--gp: 9px;
+	
+	
+	--wd:calc( 100% / var(--clmn) - (var(--mrg))*3 );
+   
+	flex: 0 1  calc(var(--wd) - var(--gp) );
+	
+  }
+
+.cu_row.product_pic.new_arriv  .cnt_dtl_pic_box{
+	  
+	border: 2px solid #e7ece7;
+	--mrg: 0px;
 	margin: var(--mrg);
 	--clmn: 4;
 	--gp: 9px;
@@ -407,7 +460,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#15aee4', end
 }
 
 .container{
-	/* background: red; */
+	/* background: rgb(16, 237, 86); */
 }
 section{margin-top: 6rem;}
 /* category and search s */
@@ -935,6 +988,9 @@ margin-left: 7px;
 
 /* product hover effect  end */
 
+.category_sec .effect.effect-three .tab-text:before{
+	border: inherit;
+}
 
 
 /*  BLOG SHILPI  */
@@ -986,7 +1042,12 @@ margin-left: 7px;
 .blog_bg .carousel-indicators button.active{
     background: rgba(var(--dark));
 }
-
+.deal_section_month_bg{
+	background: url(../images/deal-img-full.png) no-repeat;
+	background-size: cover;
+	aspect-ratio: 3.39 / 1;
+	background-position: center;
+}
 .deal_sec h3{
     font-weight: 400;
     font-size: 4.8rem;
@@ -1306,6 +1367,10 @@ background: rgba(var(--dark), 0.5); */
 	-webkit-transition: all 0.8s ease;
 	transition: all 0.8s ease;}
 	
+.hide_desktop {
+	display: none;
+}
+
 	}	
 
 
@@ -1503,17 +1568,57 @@ html {
 	/* color:red; */
 	margin-top: 10px;
  }
+
+ .top_selling_product > div + div  {
+	/* border: 2px solid red; */
+	flex-direction: column-reverse;
+}
+
+
+
+ .deal_sec h3{
+   
+    font-size: 3rem;
+     
+}
+
+.regular2 .as_item{
+	margin-top: 15px;
+}
 	
 }
 
 @media( max-width : 580px ) {
+	.navbar-light .navbar-brand {
+		margin: auto;
+	}
 .navbar .right_top_box {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
 	background: rgba(var(--dark), 1);
 	padding: 5px 8px;
+
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.hide_mobile{
+	display:none;
+}
+.round_yellow {
+    padding: 4px 8px 6px 6px;
+    line-height: 17px;
+    background: none;
+    font-size: 20px;
+}
+
+
+.shp_cart span{
+	margin-top: 2px;
+}
+
 
 .ser_parent{
 	width:85%;
@@ -1562,10 +1667,52 @@ html {
 		padding-left: 0px;
 		top: calc( 30% + 30px);
 	}
+
+
+	
+/* .deal_sec h3{
+   text-align: center;
+} */
 	  section{margin-top: 2rem;}
 	  .footer-sec{
 		display: none;
 	}
+
+.text-box{
+	text-align: center;
+}
+.deal_section_month{
+	margin-bottom: 42px;
+}
+.deal_sec h3{
+   
+    font-size: 2.6rem;
+     
+}
+
+
+
+.cu_row{
+	
+	 
+	  --cntgp: -61px;
+	  margin-right:var(--cntgp);
+	  margin-left:var(--cntgp);
+	   
+  
+  }
+.cu_row.mbl_curow{
+	
+	/* margin-right: -73px;
+	  margin-left: -73px; */
+	  --cntgp: 0px;
+	  margin-right:var(--cntgp);
+	  margin-left:var(--cntgp);
+	   
+  
+  }
+
+
 
 }
  @media( max-width : 480px ) {
