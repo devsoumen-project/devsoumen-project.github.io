@@ -1650,11 +1650,21 @@ line-height: 1.5em; }
   border: none;
   text-transform: UPPERCASE;
   font-weight: bold;
-  color: #fff;
+  /* color: #fff; */
     color:  rgba(var(--primary), 1);
+	border-radius: 0;
 
   -webkit-transition: background .3s ease;
           transition: background .3s ease; }
+		.details .input-group .btn {
+			position: relative;
+			z-index: 2;
+			border-radius: 0px;
+			margin-left: 11px;
+		}
+		.details span.input-group-btn {
+			margin-left: 3px;
+		}
   .add-to-cart:hover, .like:hover {
     background: #b36800;
     color: #fff; }
