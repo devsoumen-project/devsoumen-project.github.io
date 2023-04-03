@@ -1169,6 +1169,10 @@ h3 .bold-font{
 	/* background:   rgba(var(--secondary), 0.9); */
     color:  rgba(var(--dark), 1);
 }
+.bg_secondary {
+	background:    rgb( var(--secondary_color-r), var(--secondary_color-g), var(--secondary_color-b) );
+    color:  rgba(var(--dark), 1);
+}
 .bg_light {
     margin: -3px !important;
     background:  rgba(var(--secondary), 0.5);
