@@ -1761,34 +1761,49 @@ line-height: 1.5em; }
     margin-top: 5%;
     margin-bottom: 5%;
 }
+
+.iner_pg_bnr.login_pg{
+	height: 100vh;
+	overflow: hidden;
+	background: url(../images/ybg2.png);
+	background-size: 100%;
+}
+
 .login-form-1{
     padding: 5%;
 	/* background:  rgba(var(--secondary), 0.5); */
     /* background: rgba(var(--dark), 0.8); */
 	background:   rgb( var(--secondary_color-r), var(--secondary_color-g), var(--secondary_color-b) );
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+	background: rgb( calc(var(--secondary_color-r) + 27), calc(var(--secondary_color-g) + 38), calc(var(--secondary_color-b) + 25), 0.5 );
+   
+	margin-top: 3rem;
+	/* background: #f7c12a7d; */
+	box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
 }
 .login-form-1 h3{
     text-align: center;
     color: rgba(var(--primary));
+	margin-bottom: 2rem;
 }
 .login-form-2{
     padding: 5%;
     /* background:  rgba(var(--secondary), 0.5); */
     background:   rgb( var(--secondary_color-r), var(--secondary_color-g), var(--secondary_color-b) );
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+   
+	box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
 }
 .login-form-2 h3{
     text-align: center;
     color: rgba(var(--primary));
 }
 .login-container form{
-    padding: 10%;
+    padding: 1%;
+    /* padding: 10%; */
 }
 .btnSubmit
 {
     width: 50%;
-    border-radius: 1rem;
+    border-radius: 5px;
     padding: 1.5%;
     border: none;
     cursor: pointer;
