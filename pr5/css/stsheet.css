@@ -1917,6 +1917,10 @@ line-height: 1.5em; }
 .shopping-cart {
     margin-top: 20px;
 }
+
+.cart_pic{
+	max-height: 65px;
+}
 /* cart e */
 
 
