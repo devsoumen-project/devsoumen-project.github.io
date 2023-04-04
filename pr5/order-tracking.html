@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap_v5.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="css/stsheet.css" rel="stylesheet">
+  <link href="css/view_on_hover.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/blueimp-gallery.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+  <script type="text/javascript" src="js/jssor.js"></script>
+  <script type="text/javascript" src="js/jssor.slider.js"></script>
+
+
+ 
+
+
+</head>
+
+<body class="">
+
+
+
+
+  
+
+
+  <div class=" container-fluid  max-w-1366 p-0 cnav rel_pos bg-info">
+    <nav class="navbar sticky-top navbar-light crs_nv cu_bg-transparent  abl_pos navbar-expand-xxxl znavbar-expand-md">
+      <div class="container scrl_bg p-0">
+        <a class="navbar-brand" href="#"><img class="img-fluid mx-ht-50" src="images/logo-l.png"></a>
+        <div class="right_top_box tex text-right zbg-info">  
+
+
+ 
+
+          <a class="login round_yellow hide_desktop" href="#"><i class="fa fa-home"></i></a>
+          <a class="signup  round_yellow hide_desktop" href="#"><i class="fa fa-users"></i></a>
+        
+          <a class="login round_yellow hide_mobile" href="#"><img class="img-fluid mx-ht-50" src="images/login_icn.png">Login</a>
+          <a class="signup  round_yellow hide_mobile" href="#"><img class="img-fluid mx-ht-50" src="images/signup_icn.png">Signup</a>
+        
+          <a class="shp_cart   round_yellow" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#fff" class="bi bi-handbag-fill" viewBox="0 0 16 16"><path d="M8 1a2 2 0 0 0-2 2v2H5V3a3 3 0 1 1 6 0v2h-1V3a2 2 0 0 0-2-2zM5 5H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11v1.5a.5.5 0 0 1-1 0V5H6v1.5a.5.5 0 0 1-1 0V5z"></path></svg>
+          
+            <span> 50</span>
+            
+          </a>
+
+
+
+          <button class="navbar-toggler custom-toggler" type="button" data-toggle="offcanvas"
+          data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon ">
+            <img class="img-fluid mx-ht-50" src="images/nav_icn.png">
+
+          
+          </span>
+        </button>
+       
+       
+        </div>
+
+        
+
+ 
+        
+        <div class="navbar-collapse offcanvas-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hand Made Diaries </a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">  Preloved Books
+               
+              </a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Kids Books   </a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#">  Fiction </a>
+          </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Non - Fiction</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#"> ALL Books</a>
+            </li> -->
+
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                
+              </ul>
+            </li> -->
+
+
+
+            <li class="dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"> ALL Books <b class="caret"></b></a>
+              <ul class="dropdown-menu multi-level  p-1 m-1">
+                  <li><a href="#" class="nav-link">Level 1</a></li>                                                       
+                  <li class="dropdown-submenu">
+                      <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Level 1</a>
+                      <!-- Level 2 -->
+                      <ul class="dropdown-menu  p-1 m-1">
+                          <li><a href="#" class="nav-link">Level 2</a></li>                                    
+                          <li class="dropdown-submenu">
+                              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Level 2</a>
+                              <!-- Level 3 -->
+                              <ul class="dropdown-menu  p-1 m-1">
+                                  <li><a href="#" class="nav-link">Level 3</a></li>
+                                  <li class="dropdown-submenu">
+                                      <a href="#" class=" nav-link dropdown-toggle" data-toggle="dropdown">Level 3</a>
+                                      <!-- Level 4 -->
+                                      <ul class="dropdown-menu  p-1 m-1">
+                                          <li><a href="#" class="nav-link">Level 4</a></li>
+                                          <li><a href="#" class="nav-link">Level 4</a></li>
+                                          <li><a href="#" class="nav-link">Level 4</a></li>          
+                                      </ul>
+                                  </li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </li>
+              </ul>
+          </li> 
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class=" nv_closer"> Nav closer box</div>
+    <!-- <div class="iner_pg_bnr position-relative">
+
+
+      <img class="img-fluid  " src="images/deal-img-full.png" alt="AAAAA" >
+
+      <div class="hdr_posn_inr_pg"> 
+
+<div class="container">
+  <h1 class="my-auto ">Inner  page order</h1>
+
+</div>
+
+      </div>
+
+    </div> -->
+
+    <a  class="cata_gory search_bx d-flex justify-content-between" href="#"  data-bs-toggle="modal" data-bs-target="#staticBackdrop"> 
+      <img class="img-fluid  " src="images/search.png" alt="AAAAA" ><span> Search</span>
+      
+    </a>
+
+  </div>
+
+
+ 
+
+
+ 
+
+ 
+
+  
+
+
+
+ 
+
+
+
+
+
+
+
+  <section class="order_tracking">
+<style>
+
+/* body{
+    min-height: 50vh;
+    font-family: 'Exo 2';
+    font-size: 14px;   
+    color: #fff;
+    background:#eee;	
+} */
+
+.ord_trac{
+  color: #fff;
+}
+.ord_trac .modal-content{
+    background-color: #dc9b11;
+    border-color: #dc9b11;
+    border-radius: 1rem;
+}
+/* @media (min-width: 576px){
+.modal-dialog {
+    max-width: 100%;
+    margin: 1.75rem auto;
+}
+} */
+.ord_trac .modal-dialog {
+    max-width: 100%;
+    margin: 1.75rem auto;
+}
+.ord_trac .show{
+    padding: 0;
+}
+.ord_trac .modal-header{
+    border-bottom: none;
+    text-align: center;
+}
+.ord_trac .modal-header .close {
+    padding: 1rem 1rem;
+    margin: -1rem -1rem -1rem 0;
+    color: #fff;
+}
+.ord_trac :-moz-any-link:focus {
+    outline: none;
+}
+.ord_trac .modal-title{
+    line-height: 3rem;
+}
+.ord_trac .modal-body{
+    padding: 1rem;
+}
+.ord_trac #progressbar {
+    margin-bottom: 3vh;
+    overflow: hidden;
+    color: white;
+    padding-left: 0px;
+    margin-top: 3vh
+}
+
+.ord_trac #progressbar li {
+    list-style-type: none;
+    font-size: 0.8rem;
+    width: 25%;
+    float: left;
+    position: relative;
+    font-weight: 400;
+    color: white;
+}
+
+.ord_trac #progressbar #step1:before {
+    content: "";
+    color: white;
+    width: 20px;
+    height: 20px;
+    margin-left: 0px !important;
+}
+
+.ord_trac #progressbar #step2:before {
+    content: "";
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    margin-left: 32%;
+}
+
+.ord_trac #progressbar #step3:before {
+    content: "";
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    margin-right: 32% ; 
+}
+
+.ord_trac #progressbar #step4:before {
+    content: "";
+    color: rgb(151, 149, 149, 0.651);
+    width: 20px;
+    height: 20px;
+    margin-right: 0px !important;
+    /* position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 9; */
+}
+
+.ord_trac #progressbar li:before {
+    line-height: 29px;
+    display: block;
+    font-size: 12px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    margin: auto;
+    z-index: -1;
+    margin-bottom: 1vh;
+}
+
+
+.ord_trac .progress-track{
+    padding: 0 1.5%;
+}
+
+.ord_trac #progressbar{
+  position: relative;
+}
+.ord_trac #progressbar:before{
+  height: 2px;
+  width: 100%;
+  background: rgb(151, 149, 149, 0.651);
+
+  position: absolute;
+  display: block;
+  content: "";
+  top:9px;
+  z-index: 0;
+}
+
+.ord_trac #progressbar:after{
+  height: 2px;
+  width: 90%;
+  background: #fff;
+  position: absolute;
+  display: block;
+  content: "";
+  top:9px;
+  z-index: 1;
+
+}
+.ord_trac #progressbar li:nth-child(2):after {
+    margin-right: auto;
+}
+
+.ord_trac #progressbar li:nth-child(1):after {
+    margin: auto;
+}
+
+.ord_trac #progressbar li:nth-child(3):after {
+    float: left;
+    width: 68%;
+}
+.ord_trac #progressbar li:nth-child(4):after {
+    margin-left: auto;
+    width: 132%;
+}
+
+
+
+.ord_trac #three{
+    font-size: 1.2rem;
+}
+@media (max-width: 767px){
+  .ord_trac  #three{
+        font-size: 1rem;
+    } 
+}
+.ord_trac .details{
+    padding: 2rem;
+    font-size: 1.4rem;
+    line-height: 3.5rem;
+}
+
+@media (max-width: 767px){
+  .ord_trac .details {
+    padding: 2rem 0;
+    font-size: 1rem;
+    line-height: 2.5rem;
+}
+}
+.ord_trac .d-table{
+    width: 100%;
+}
+.ord_trac .d-table-row{
+    width: 100%;
+}
+.ord_trac .d-table-cell{
+    padding-left: 3rem;
+}
+@media (max-width: 767px){
+  .ord_trac .d-table-cell{
+        padding-left: 1rem;
+    } 
+}
+.ord_trac .col-3{
+    display: grid;
+    text-align: end;
+    height: 90px;
+}
+.ord_trac .col-3 .d-table-row{
+    align-self: flex-end;
+}
+.ord_trac .fa{
+    font-size: 1rem;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 0.5rem;
+    color: #db9a11;
+    background-color: #fff;
+    border-radius: 2rem;
+    bottom: 0;
+    right: 0;
+}
+.ord_trac button:active{
+    outline: none;
+}
+.ord_trac button:focus{
+   outline: none;
+}
+.ord_trac button{
+    margin-top: 50vh
+}
+
+</style>
+
+  
+            <!-- <button type="button" class="btn btn-primary d-flex mx-auto btn-lg" data-toggle="modal" data-target="#myModal">
+              Track your order
+            </button> -->
+          <div class="container ord_trac">
+
+  <!-- The Modal -->
+  <div class="zmodal zfade" id="zmyModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title mx-auto">Order Status<br>AWB Number-5335T5S</h4>
+          <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="progress-track">
+              <ul id="progressbar">
+                  <li class="step0 active " id="step1">Order placed</li>
+                  <li class="step0 active text-center" id="step2">In Transit</li>
+                  <li class="step0 active text-right" id="step3"><span id="three">Out for Delivery</span></li>
+                  <li class="step0 text-right" id="step4">Delivered</li>
+              </ul>
+          </div>
+          <div class="row">
+            <div class="col-9">
+              <div class="details d-table">
+                <div class="d-table-row">
+                  <div class="d-table-cell">
+                    Shipped with
+                  </div>
+                  <div class="d-table-cell">
+                    UPS Expedited
+                  </div>
+                </div>
+                <div class="d-table-row">
+                  <div class="d-table-cell">
+                    Estimated Delivery
+                  </div>
+                  <div class="d-table-cell">
+                    02/12/2017
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="d-table-row">
+                <a href=#><i class="fa fa-phone" aria-hidden="true"></i></a>
+              </div>
+              <div class="d-table-row">
+                <a href=#><i class="fa fa-envelope" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>      
+        </div>                  
+    </div>
+  </div>
+  </div>
+          </div>
+          
+  </section>
+  
+  
+  
+
+
+  
+   
+
+   
+
+   
+
+ 
+ 
+  
+  <section class="footer-sec pt-5  mt-0">
+    <footer>
+
+
+  
+    <div class="container">
+      <div class="row">
+
+        <div class="d-flex flex-wrap text-white">
+          <div class="col-12 col-md-4 copyright-text text-left">
+            <img class="img-fluid mx-ht-50" src="images/logo-l.png">
+            <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam autem   reprehenderit.</p>
+            <h3>Follow us</h3>
+            <ul class="p-0 d-flex social">
+              <li> 
+                <a class="text-ptimary p-2 d-inline-block text-decoration-none"  href="#">
+                  <i class="fab fa-facebook"></i> 
+                  </a>
+                
+              </li>
+
+              <li> 
+                <a class="text-ptimary p-2 d-inline-block text-decoration-none" href="#">
+                  <i class="fab fa-twitter"></i>
+                     </a>
+
+              </li>
+              <li> 
+                <a class="text-ptimary p-2 d-inline-block text-decoration-none" href="#">
+                  <i class="fab fa-instagram"></i>
+                     </a>
+
+              </li>
+              
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-4 copyright-text text-left">
+            <h3>Informative Links</h3>
+            <ul>
+              <li> > Terms & Condition</li>
+              <li> > Privacy Policy</li>
+              <li> > About Us</li>
+              <li> > Return & Refund Policy</li>
+              <li> > Shipping Policy</li>
+              <li> > Track Order</li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-4 copyright-text text-left">
+            <div>
+              <div>
+                <h3>Address</h3>
+                <p>Lodem address</p>
+              </div>
+  
+              <div>
+                <h3>Support</h3>
+                
+                <!-- <p>photoeye@gmail.com</p>
+                <p>8368045461 </p> -->
+  
+                <ul class="p-0">
+                  <li> 
+                    <a class="text-white pt-2 d-inline-block text-decoration-none"  href="mailto:someone@example.com">
+                      <!-- <i class="fa fa-envelope"></i>  -->
+                      photoeye@gmail.com  </a>
+                    
+                  </li>
+  
+                  <li> 
+                    <a class="text-white pt-2 d-inline-block text-decoration-none" href="tel:+ 8368045461  ">
+                      <!-- <i class="fa fa-phone"></i> -->
+                       8368045461  </a>
+  
+                  </li>
+                  
+                </ul>
+              </div>
+              <!-- <h3>Newsletter</h3>
+              <p>Subscribe and Get regular
+                updates</p> -->
+              <!-- <div class="subscribe_btn_cont d-inline">
+                <div class="d-inline">
+                  <form action="#" method="post">
+
+                    <input class="border-0 " type="text" placeholder="Email Address">
+                    <button type="submit" class="bg_light  border-0">Subscribe</button>
+
+
+                  </form>
+                </div>
+              </div> -->
+              <!-- <h3>Follow us</h3> -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+ 
+    <div class="pt-3 cpr">
+      <div class="container">
+        <div class="row">
+  
+          <div class="d-flex">
+            <div class="col-md-6 copyright-text text-left">
+              <p>© 2023 Readershub. All Rights Reserved.</p>
+            </div>
+  
+            <div class="col-md-6 copyright-text text-center">
+              <p>© 2023 Readershub. All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </section>
+
+
+ 
+
+
+
+  
+  
+ <!-- Button trigger modal -->
+ 
+
+<!-- Modal -->
+<div class="modal fade h-100 ser_bx "  id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true"  >
+
+  <div class="modal-dialog d-flex">
+    <div class="modal-content my-auto">
+       
+      <div class="modal-body d-flex justify-content-center">
+       
+
+
+        <div class="ser_parent">   
+
+        
+        <form  action="#" method="post">
+          <!-- <input type="text" class="textbox" placeholder="Search">
+          <input title="Search" value="" type="submit" class="button"> -->
+
+          <div class="search-box">
+            <button  type="submit" class="btn-search" ><i class="fas fa-search"></i></button>
+            <input type="text" class="input-search" placeholder="Type to Search...">
+          </div>
+        </form>
+
+      </div>
+
+
+        <!-- <button type="button" class="btn-close my-auto zbtn_dark " data-bs-dismiss="modal" aria-label="Close"> X </button> -->
+      </div>
+       
+    </div>
+  </div>
+  <div class="close_box"  data-bs-dismiss="modal" aria-label="Close"></div>
+
+</div>
+
+</body>
+
+
+<!-- gallery -->
+<script src="js/jquery_v1.12.0.min.js"></script>
+<script src="js/bootstrap_v5.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./js/slick.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.blueimp-gallery.min.js"></script>
+
+<script src="js/aos.js"></script>
+<script src="./script.js"></script>
+
+<script src="js/custom.js"></script>
+<script>
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 20) {
+      $('.cnav').addClass("msticky");
+
+    }
+    else {
+      $('.cnav').removeClass("msticky");
+
+    }
+  });
+</script>
+
+
+<script>
+  AOS.init({
+    duration: 1200
+  });
+
+</script>
+
+<script>
+
+
+  (function () {
+    'use strict'
+
+    document.querySelector('[data-toggle="offcanvas"]').addEventListener('click', function () {
+      document.querySelector('.offcanvas-collapse').classList.toggle('open')
+      document.querySelector('.crs_nv').classList.toggle('open')
+
+      // document.querySelector('.nv_closer').addEventListener('click', function () {
+      // document.querySelector('.navbar').classList.toggle('open')
+      // document.querySelector('.zcrs_nv').classList.toggle('open')
+    })
+  })()
+</script>
+
+
+<script>
+
+  var x = document.querySelectorAll(".nv_closer")
+
+  x.forEach(i => {
+    i.addEventListener('click', my_fnc)
+  })
+
+
+  function my_fnc (e) {
+    var y = document.querySelector(".navbar-collapse.offcanvas-collapse.open");
+    var yy = document.querySelector(".navbar.open");
+    var yyy = document.querySelector(".nv_closer.open");
+    // e.target.classList.toggle("open")
+    y.classList.toggle("open")
+    yy.classList.toggle("open")
+    yyy.classList.toggle("open")
+  }
+
+
+ 
+
+
+</script>
+
+
+<script>
+
+  var x = document.querySelectorAll(".navbar-toggler.custom-toggler")
+
+  x.forEach(i => {
+    i.addEventListener('click', my_fnc2)
+  })
+
+
+  function my_fnc2 (e) {
+    var y = document.querySelector(".nv_closer");
+    // var yy = document.querySelector(".navbar.open");
+    // e.target.classList.toggle("open")
+    y.classList.toggle("open")
+    // yy.classList.toggle("open")
+  }
+
+
+ 
+
+
+</script>
+
+
+<script>
+
+  // Hide all item in .carousel-item initially
+$(".testimoni_sldr_item.carousel-item *").addClass("d-none");
+
+// Animate the first slide
+setTimeout(function() {
+  $(".testimoni_sldr_item.carousel-item.active *")
+    .removeClass("d-none")
+    .addClass("animated");
+}, 300);
+
+// Animate after the slider changes
+$("#testomoniBanner").on("slid.bs.carousel", function(e) {
+  // Add .d-none to previous shown slide
+  $(".testimoni_sldr_item.carousel-item *").addClass("d-none");
+
+  // Element for new slide
+  var c = e["relatedTarget"];
+
+  // After 0.7 sec slide changes, then make the animation for new slide
+  setTimeout(function() {
+    $(c)
+      .find("*")
+      .removeClass("d-none")
+      .addClass("animated");
+    console.log("c");
+  }, 300);
+});
+</script>
+
+<!-- <script>
+
+
+const navLinks = document.querySelectorAll('.nv_closer')
+const menuToggle = document.getElementById('navbarNavDropdown')
+const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false})
+navLinks.forEach((l) => {
+  const x = document.querySelectorAll('.nv_closer')
+    l.addEventListener('click', () => { bsCollapse.toggle() })
+})
+
+</script> -->
+
+</html>
