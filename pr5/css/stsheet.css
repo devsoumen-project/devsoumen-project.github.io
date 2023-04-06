@@ -1771,7 +1771,7 @@ line-height: 1.5em; }
 .iner_pg_bnr.login_pg{
 	height: 100vh;
 	overflow: hidden;
-	background: url(../images/ybg2.png);
+	background: url(../images/ybg3.png);
 	background-size: 100%;
 }
 
@@ -1779,9 +1779,9 @@ line-height: 1.5em; }
     padding: 5%;
 	/* background:  rgba(var(--secondary), 0.5); */
     /* background: rgba(var(--dark), 0.8); */
-	background:   rgb( var(--secondary_color-r), var(--secondary_color-g), var(--secondary_color-b) );
-	background: rgb( calc(var(--secondary_color-r) + 27), calc(var(--secondary_color-g) + 38), calc(var(--secondary_color-b) + 25), 0.5 );
-   
+	/* background:   rgb( var(--secondary_color-r), var(--secondary_color-g), var(--secondary_color-b) ); */
+	/* background: rgb( calc(var(--secondary_color-r) + 27), calc(var(--secondary_color-g) + 38), calc(var(--secondary_color-b) + 25), 0.5 ); */
+   background: #171102bf;
 	margin-top: 3rem;
 	/* background: #f7c12a7d; */
 	box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
