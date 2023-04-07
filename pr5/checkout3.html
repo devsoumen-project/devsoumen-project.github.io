@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap_v5.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="css/stsheet.css" rel="stylesheet">
+  <link href="css/view_on_hover.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/blueimp-gallery.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+  <script type="text/javascript" src="js/jssor.js"></script>
+  <script type="text/javascript" src="js/jssor.slider.js"></script>
+
+
+ 
+
+
+</head>
+
+<body class="">
+
+
+
+
+  
+
+
+  <div class=" container-fluid  max-w-1366 p-0 cnav rel_pos bg-info">
+    <nav class="navbar sticky-top navbar-light crs_nv cu_bg-transparent  abl_pos navbar-expand-xxxl znavbar-expand-md">
+      <div class="container scrl_bg p-0">
+        <a class="navbar-brand" href="#"><img class="img-fluid mx-ht-50" src="images/logo-l.png"></a>
+        <div class="right_top_box tex text-right zbg-info">  
+
+
+ 
+
+          <a class="login round_yellow hide_desktop" href="#"><i class="fa fa-home"></i></a>
+          <a class="signup  round_yellow hide_desktop" href="#"><i class="fa fa-users"></i></a>
+        
+          <a class="login round_yellow hide_mobile" href="#"><img class="img-fluid mx-ht-50" src="images/login_icn.png">Login</a>
+          <a class="signup  round_yellow hide_mobile" href="#"><img class="img-fluid mx-ht-50" src="images/signup_icn.png">Signup</a>
+        
+          <a class="shp_cart   round_yellow" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#fff" class="bi bi-handbag-fill" viewBox="0 0 16 16"><path d="M8 1a2 2 0 0 0-2 2v2H5V3a3 3 0 1 1 6 0v2h-1V3a2 2 0 0 0-2-2zM5 5H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11v1.5a.5.5 0 0 1-1 0V5H6v1.5a.5.5 0 0 1-1 0V5z"></path></svg>
+          
+            <span> 50</span>
+            
+          </a>
+
+
+
+          <button class="navbar-toggler custom-toggler" type="button" data-toggle="offcanvas"
+          data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon ">
+            <img class="img-fluid mx-ht-50" src="images/nav_icn.png">
+
+          
+          </span>
+        </button>
+       
+       
+        </div>
+
+        
+
+ 
+        
+        <div class="navbar-collapse offcanvas-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hand Made Diaries </a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">  Preloved Books
+               
+              </a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Kids Books   </a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#">  Fiction </a>
+          </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Non - Fiction</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#"> ALL Books</a>
+            </li> -->
+
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                
+              </ul>
+            </li> -->
+
+
+
+            <li class="dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"> ALL Books <b class="caret"></b></a>
+              <ul class="dropdown-menu multi-level  p-1 m-1">
+                  <li><a href="#" class="nav-link">Level 1</a></li>                                                       
+                  <li class="dropdown-submenu">
+                      <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Level 1</a>
+                      <!-- Level 2 -->
+                      <ul class="dropdown-menu  p-1 m-1">
+                          <li><a href="#" class="nav-link">Level 2</a></li>                                    
+                          <li class="dropdown-submenu">
+                              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Level 2</a>
+                              <!-- Level 3 -->
+                              <ul class="dropdown-menu  p-1 m-1">
+                                  <li><a href="#" class="nav-link">Level 3</a></li>
+                                  <li class="dropdown-submenu">
+                                      <a href="#" class=" nav-link dropdown-toggle" data-toggle="dropdown">Level 3</a>
+                                      <!-- Level 4 -->
+                                      <ul class="dropdown-menu  p-1 m-1">
+                                          <li><a href="#" class="nav-link">Level 4</a></li>
+                                          <li><a href="#" class="nav-link">Level 4</a></li>
+                                          <li><a href="#" class="nav-link">Level 4</a></li>          
+                                      </ul>
+                                  </li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </li>
+              </ul>
+          </li> 
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class=" nv_closer"> Nav closer box</div>
+    <div class="iner_pg_bnr position-relative bg-white">
+
+
+      <!-- <img class="img-fluid  " src="images/deal-img-full.png" alt="AAAAA" > -->
+
+      <div class="zhdr_posn_inr_pg"> 
+
+<div class="container">
+  <!-- <h1 class="my-auto ">Inner  page  Check out</h1> -->
+
+
+   <div class="chk_out_box_parent">
+
+     <div class="chk_out_box d-flex justify-content-between">
+    <div class="chk_out_box_left">
+      <!-- <img class="img-fluid" src="images/chk.png"> -->
+    </div>
+              <div class="checkout-form">
+              
+                
+    
+    
+                <form action="#!" method="get">
+                  <h6>Contact information</h6>
+    
+                  <div class="frm_row_box zd-flex"> 
+    
+                    <div class="form-control">
+                      <!-- <label for="checkout-name">Full name</label> -->
+                      <div>
+                        <span class="fa fa-user-circle"></span>
+                        <input type="text" id="checkout-name" name="checkout-name" placeholder="Enter you name...">
+                      </div>
+                    </div>
+                    <div class="form-control">
+                      <!-- <label for="checkout-email">E-mail</label> -->
+                      <div>
+                        <span class="fa fa-envelope"></span>
+                        <input type="email" id="checkout-email" name="checkout-email" placeholder="Enter your email...">
+                      </div>
+                    </div>
+    
+                    <div class="form-control">
+                      <!-- <label for="checkout-phone">Phone</label> -->
+                      <div>
+                        <span class="fa fa-phone"></span>
+                        <input type="tel" name="checkout-phone" id="checkout-phone" placeholder="Enter you phone...">
+                      </div>
+                    </div>
+                  </div>
+                 
+                 
+                  
+                  <h6>Shipping address</h6>
+                  <div class="frm_row_box zd-flex flex-wrap">  
+    
+                    <div class="form-control col-6">
+                      <!-- <label for="checkout-address">Address</label> -->
+                      <div>
+                        <span class="fa fa-home"></span>
+                        <input type="text" name="checkout-address" id="checkout-address" placeholder="Your address...">
+                      </div>
+                    </div>
+                    <div class="form-control col-6">
+                      <!-- <label for="checkout-city">City</label> -->
+                      <div>
+                        <span class="fa fa-building"></span>
+                        <input type="text" name="checkout-city" id="checkout-city" placeholder="Your city...">
+                      </div>
+                    </div>
+
+
+                    <div class="form-group col-12">
+                      <div class="form-control">
+                        <!-- <label for="checkout-country">Country</label> -->
+                        <div>
+                          <span class="fa fa-globe"></span>
+                          <input type="text" name="checkout-country" id="checkout-country" placeholder="Your country..." list="country-list">
+                          <datalist id="country-list">
+                            <option value="India"></option>
+                            <option value="USA"></option>
+                            <option value="Russia"></option>
+                            <option value="Japan"></option>
+                            <option value="Egypt"></option>
+                          </datalist>
+                        </div>
+                      </div>
+                      <div class="form-control">
+                        <!-- <label for="checkout-postal">Postal code</label> -->
+                        <div>
+                          <span class="fa fa-archive"></span>
+                          <input type="numeric" name="checkout-postal" id="checkout-postal" placeholder="Your postal code...">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                 
+                  <!-- <div class="form-group">
+                    <div class="form-control">
+                      <label for="checkout-country">Country</label>
+                      <div>
+                        <span class="fa fa-globe"></span>
+                        <input type="text" name="checkout-country" id="checkout-country" placeholder="Your country..." list="country-list">
+                        <datalist id="country-list">
+                          <option value="India"></option>
+                          <option value="USA"></option>
+                          <option value="Russia"></option>
+                          <option value="Japan"></option>
+                          <option value="Egypt"></option>
+                        </datalist>
+                      </div>
+                    </div>
+                    <div class="form-control">
+                      <label for="checkout-postal">Postal code</label>
+                      <div>
+                        <span class="fa fa-archive"></span>
+                        <input type="numeric" name="checkout-postal" id="checkout-postal" placeholder="Your postal code...">
+                      </div>
+                    </div>
+                  </div> -->
+                  <div class="form-control checkbox-control">
+                    <input type="checkbox" name="checkout-checkbox" id="checkout-checkbox">
+                    <label for="checkout-checkbox">Save this information for next time</label>
+                  </div>
+                  <div class="form-control-btn">
+                    <button>Continue</button>
+                  </div>
+                </form>
+              
+                
+              </div>
+              
+              <!-- <div class="cc col-md-6">
+                <img class="img-fluid" src="images/banner2.png">
+              </div> -->
+          </div>
+
+</div>
+
+</div>
+
+      </div>
+
+    </div>
+
+    <a  class="cata_gory search_bx d-flex justify-content-between" href="#"  data-bs-toggle="modal" data-bs-target="#staticBackdrop"> 
+      <img class="img-fluid  " src="images/search.png" alt="AAAAA" ><span> Search</span>
+      
+    </a>
+
+  </div>
+
+
+ 
+
+
+ 
+
+ 
+
+  
+
+
+
+ 
+
+
+
+
+
+
+
+  
+  
+  
+  <section class=" ">
+   
+
+<style>
+
+
+
+
+ 
+.chk_out_box {
+  /* font-family: "Poppins", sans-serif; */
+  /* heigh7t: 100vh; */
+  width: 30%;
+  margin: 0px auto;
+  padding: 50px 0px 50px;
+  color: #4E5150;
+}
+.chk_out_box header {
+  height: 5%;
+  margin-bottom: 30px;
+}
+.chk_out_box header > h3 {
+  font-size: 25px;
+  color: #4E5150;
+  font-weight: 500;
+}
+.chk_out_box {
+  /* height: 85%; */
+  /* display: flex;
+  column-gap: 100px; */
+}
+.chk_out_box .checkout-form {
+  width: 100%;
+}
+
+.checkout-form {
+      border: 0.2px solid #ced4da;
+      border-radius: 3px;
+      padding:10px;
+}
+.chk_out_box .checkout-form form h6 {
+  font-size: 0.8rem;
+    font-weight: 600;
+    padding-left: 15px;
+}
+.chk_out_box .checkout-form form .form-control {
+  margin: 10px 0px;
+  /*position: relative;*/
+  border: none;
+}
+.chk_out_box .checkout-form form .form-control span {
+color:#eb9548fc; 
+  
+}
+.chk_out_box .checkout-form form .form-control label:not([for="checkout-checkbox"]) {
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+.chk_out_box .checkout-form form .form-control input:not([type="checkbox"]) {
+  width: 100%;
+  padding: 10px 10px 10px 40px;
+  border-radius: 3px;
+  outline: none;
+      border: 0.2px solid #ced4da;
+  font-size: 12px;
+  font-weight: 700;
+}
+.chk_out_box .checkout-form form .form-control input:not([type="checkbox"])::placeholder {
+  font-size: 10px;
+  font-weight: 500;
+}
+.chk_out_box .checkout-form form .form-control label[for="checkout-checkbox"] {
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 10px;
+}
+.chk_out_box .checkout-form form .form-control > div {
+  position: relative;
+}
+.chk_out_box .checkout-form form .form-control > div span.fa {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(15px, -50%);
+}
+.chk_out_box .checkout-form form .form-group {
+  display: flex;
+  column-gap: 25px;
+}
+.chk_out_box .checkout-form form .checkbox-control {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.chk_out_box .checkout-form form .form-control-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.chk_out_box .checkout-form form .form-control-btn button {
+  padding: 10px 25px;
+  font-size: 1rem;
+  color: #fff;
+  background: #F2994A;
+  border: 0;
+  border-radius: 3px;
+  letter-spacing: 0.5px;
+  font-weight: 200;
+  cursor: pointer;
+  width: 100%;
+}
+.chk_out_box .checkout-details {
+  width: 40%;
+}
+.chk_out_box .checkout-details .checkout-details-inner {
+  background: #F2F2F2;
+  border-radius: 10px;
+  padding: 20px;
+}
+.chk_out_box .checkout-details .checkout-details-inner .checkout-lists {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  margin-bottom: 40px;
+}
+.chk_out_box .checkout-details .checkout-details-inner .checkout-lists .card {
+  width: 100%;
+  display: flex;
+  column-gap: 15px;
+}
+.chk_out_box .checkout-details .checkout-details-inner .checkout-lists .card .card-image {
+  width: 35%;
+}
+.chk_out_box .checkout-details .checkout-details-inner .checkout-lists .card .card-image img {
+  width: 100%;
+  object-fit: fill;
+  border-radius: 10px;
+}
+.chk_out_box .checkout-details .checkout-details-inner .checkout-lists .card .card-details {
+  display: flex;
+  flex-direction: column;
+}
+.chk_out_box .checkout-details .checkout-details-inner .checkout-lists .card .card-details .card-name {
+  font-size: 12px;
+  font-weight: 500;
+}
+.chk_out_box .checkout-details .checkout-details-inner .checkout-lists .card .card-details .card-price {
+  font-size: 10px;
+  font-weight: 500;
+  color: #F2994A;
+  margin-top: 5px;
+}
+.chk_out_box .checkout-details .checkout-details-inner .checkout-lists .card .card-details .card-price span {
+  color: #4E5150;
+  text-decoration: line-through;
+  margin-left: 10px;
+}
+.chk_out_box .checkout-details .checkout-details-inner .checkout-lists .card .card-details .card-wheel {
+  margin-top: 17px;
+  border: 0.2px solid #4e515085;
+  width: 90px;
+  padding: 8px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.chk_out_box .checkout-details .checkout-details-inner .checkout-lists .card .card-details .card-wheel button {
+  background: #E0E0E0;
+  color: #828282;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: 500;
+}
+.chk_out_box .checkout-details .checkout-details-inner .checkout-shipping, .chk_out_box .checkout-details .checkout-details-inner .checkout-total {
+  display: flex;
+  font-size: 16px;
+  padding: 5px 0px;
+  border-top: 1px solid #BDBDBD;
+  justify-content: space-between;
+}
+.chk_out_box .checkout-details .checkout-details-inner .checkout-shipping p, .chk_out_box .checkout-details .checkout-details-inner .checkout-total p {
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.chk_out_box footer a {
+  text-decoration: none;
+  color: inherit;
+}
+@media screen and (max-width: 1024px) {
+ .chk_out_box {
+    width: 80%;
+  }
+  .chk_out_box {
+    column-gap: 70px;
+  }
+}
+@media screen and (max-width: 768px) {
+ .chk_out_box {
+    width: 92%;
+  }
+  .chk_out_box {
+    flex-direction: column-reverse;
+    height: auto;
+    margin-bottom: 50px;
+  }
+  .chk_out_box .checkout-form {
+    width: 100%;
+    margin-top: 35px;
+  }
+  .chk_out_box .checkout-details {
+    width: 100%;
+  }
+ .chk_out_box footer {
+    height: 10%;
+  }
+}
+
+
+</style>
+
+
+
+
+
+   
+  </section>
+
+  <!-- <section class="checkout-details chk_out_box">
+    <div class="checkout-details-inner">
+      <div class="checkout-lists">
+        <div class="card">
+          <div class="card-image"><img src="https://rvs-checkout-page.onrender.com/photo1.png" alt=""></div>
+          <div class="card-details">
+            <div class="card-name">Vintage Backbag</div>
+            <div class="card-price">$54.99 <span>$94.99</span></div>
+            <div class="card-wheel">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image"><img src="https://rvs-checkout-page.onrender.com/photo2.png" alt=""></div>
+          <div class="card-details">
+            <div class="card-name">Levi Shoes</div>
+            <div class="card-price">$74.99 <span>$124.99</span></div>
+            <div class="card-wheel">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="checkout-shipping">
+        <h6>Shipping</h6>
+        <p>$19</p>
+      </div>
+      <div class="checkout-total">
+        <h6>Total</h6>
+        <p>$148.98</p>
+      </div>
+    </div>
+  </section> -->
+
+
+  
+   
+
+   
+
+ 
+
+ 
+ 
+  
+  <section class="footer-sec pt-5  mt-0">
+    <footer>
+
+
+  
+    <div class="container">
+      <div class="row">
+
+        <div class="d-flex flex-wrap cu_text_white">
+          <div class="col-12 col-md-4 copyright-text text-left">
+            <img class="img-fluid mx-ht-50" src="images/logo-l.png">
+            <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam autem   reprehenderit.</p>
+            <h3>Follow us</h3>
+            <ul class="p-0 d-flex social">
+              <li> 
+                <a class="text-ptimary p-2 d-inline-block text-decoration-none"  href="#">
+                  <i class="fab fa-facebook"></i> 
+                  </a>
+                
+              </li>
+
+              <li> 
+                <a class="text-ptimary p-2 d-inline-block text-decoration-none" href="#">
+                  <i class="fab fa-twitter"></i>
+                     </a>
+
+              </li>
+              <li> 
+                <a class="text-ptimary p-2 d-inline-block text-decoration-none" href="#">
+                  <i class="fab fa-instagram"></i>
+                     </a>
+
+              </li>
+              
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-4 copyright-text text-left">
+            <h3>Informative Links</h3>
+            <ul>
+              <li> <a href="#">Terms & Condition </a> </li>
+              <li> <a href="#"> Privacy Policy</a> </li>
+              <li> <a href="#">About Us </a> </li>
+              <li> <a href="#">Return & Refund Policy</a> </li>
+              <li> <a href="#"> Shipping Policy</a> </li>
+              <li> <a href="#"> Track Order</a> </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-4 copyright-text text-left">
+            <div>
+              <div>
+                <h3>Address</h3>
+                <p>Lodem address</p>
+              </div>
+  
+              <div>
+                <h3>Support</h3>
+                
+                <!-- <p>photoeye@gmail.com</p>
+                <p>8368045461 </p> -->
+  
+                <ul class="p-0">
+                  <li> 
+                    <a class="cu_text_white pt-2 d-inline-block text-decoration-none"  href="mailto:someone@example.com">
+                      <!-- <i class="fa fa-envelope"></i>  -->
+                      photoeye@gmail.com  </a>
+                    
+                  </li>
+  
+                  <li> 
+                    <a class="cu_text_white pt-2 d-inline-block text-decoration-none" href="tel:+ 8368045461  ">
+                      <!-- <i class="fa fa-phone"></i> -->
+                       8368045461  </a>
+  
+                  </li>
+                  
+                </ul>
+              </div>
+              <!-- <h3>Newsletter</h3>
+              <p>Subscribe and Get regular
+                updates</p> -->
+              <!-- <div class="subscribe_btn_cont d-inline">
+                <div class="d-inline">
+                  <form action="#" method="post">
+
+                    <input class="border-0 " type="text" placeholder="Email Address">
+                    <button type="submit" class="bg_light  border-0">Subscribe</button>
+
+
+                  </form>
+                </div>
+              </div> -->
+              <!-- <h3>Follow us</h3> -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+ 
+    <div class="pt-3 cpr">
+      <div class="container">
+        <div class="row">
+  
+          <div class="d-flex">
+            <div class="col-md-6 copyright-text text-left">
+              <p>© 2023 Readershub. All Rights Reserved.</p>
+            </div>
+  
+            <div class="col-md-6 copyright-text text-center">
+              <p>© 2023 Readershub. All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </section>
+
+
+ 
+
+
+
+  
+  
+ <!-- Button trigger modal -->
+ 
+
+<!-- Modal -->
+<div class="modal fade h-100 ser_bx "  id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true"  >
+
+  <div class="modal-dialog d-flex">
+    <div class="modal-content my-auto">
+       
+      <div class="modal-body d-flex justify-content-center">
+       
+
+
+        <div class="ser_parent">   
+
+        
+        <form  action="#" method="post">
+          <!-- <input type="text" class="textbox" placeholder="Search">
+          <input title="Search" value="" type="submit" class="button"> -->
+
+          <div class="search-box">
+            <button  type="submit" class="btn-search" ><i class="fas fa-search"></i></button>
+            <input type="text" class="input-search" placeholder="Type to Search...">
+          </div>
+        </form>
+
+      </div>
+
+
+        <!-- <button type="button" class="btn-close my-auto zbtn_dark " data-bs-dismiss="modal" aria-label="Close"> X </button> -->
+      </div>
+       
+    </div>
+  </div>
+  <div class="close_box"  data-bs-dismiss="modal" aria-label="Close"></div>
+
+</div>
+
+</body>
+
+
+<!-- gallery -->
+<script src="js/jquery_v1.12.0.min.js"></script>
+<script src="js/bootstrap_v5.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./js/slick.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.blueimp-gallery.min.js"></script>
+
+<script src="js/aos.js"></script>
+<script src="./script.js"></script>
+
+<script src="js/custom.js"></script>
+<script>
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 20) {
+      $('.cnav').addClass("msticky");
+
+    }
+    else {
+      $('.cnav').removeClass("msticky");
+
+    }
+  });
+</script>
+
+
+<script>
+  AOS.init({
+    duration: 1200
+  });
+
+</script>
+
+<script>
+
+
+  (function () {
+    'use strict'
+
+    document.querySelector('[data-toggle="offcanvas"]').addEventListener('click', function () {
+      document.querySelector('.offcanvas-collapse').classList.toggle('open')
+      document.querySelector('.crs_nv').classList.toggle('open')
+
+      // document.querySelector('.nv_closer').addEventListener('click', function () {
+      // document.querySelector('.navbar').classList.toggle('open')
+      // document.querySelector('.zcrs_nv').classList.toggle('open')
+    })
+  })()
+</script>
+
+
+<script>
+
+  var x = document.querySelectorAll(".nv_closer")
+
+  x.forEach(i => {
+    i.addEventListener('click', my_fnc)
+  })
+
+
+  function my_fnc (e) {
+    var y = document.querySelector(".navbar-collapse.offcanvas-collapse.open");
+    var yy = document.querySelector(".navbar.open");
+    var yyy = document.querySelector(".nv_closer.open");
+    // e.target.classList.toggle("open")
+    y.classList.toggle("open")
+    yy.classList.toggle("open")
+    yyy.classList.toggle("open")
+  }
+
+
+ 
+
+
+</script>
+
+
+<script>
+
+  var x = document.querySelectorAll(".navbar-toggler.custom-toggler")
+
+  x.forEach(i => {
+    i.addEventListener('click', my_fnc2)
+  })
+
+
+  function my_fnc2 (e) {
+    var y = document.querySelector(".nv_closer");
+    // var yy = document.querySelector(".navbar.open");
+    // e.target.classList.toggle("open")
+    y.classList.toggle("open")
+    // yy.classList.toggle("open")
+  }
+
+
+ 
+
+
+</script>
+
+
+<script>
+
+  // Hide all item in .carousel-item initially
+$(".testimoni_sldr_item.carousel-item *").addClass("d-none");
+
+// Animate the first slide
+setTimeout(function() {
+  $(".testimoni_sldr_item.carousel-item.active *")
+    .removeClass("d-none")
+    .addClass("animated");
+}, 300);
+
+// Animate after the slider changes
+$("#testomoniBanner").on("slid.bs.carousel", function(e) {
+  // Add .d-none to previous shown slide
+  $(".testimoni_sldr_item.carousel-item *").addClass("d-none");
+
+  // Element for new slide
+  var c = e["relatedTarget"];
+
+  // After 0.7 sec slide changes, then make the animation for new slide
+  setTimeout(function() {
+    $(c)
+      .find("*")
+      .removeClass("d-none")
+      .addClass("animated");
+    console.log("c");
+  }, 300);
+});
+</script>
+
+<!-- <script>
+
+
+const navLinks = document.querySelectorAll('.nv_closer')
+const menuToggle = document.getElementById('navbarNavDropdown')
+const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false})
+navLinks.forEach((l) => {
+  const x = document.querySelectorAll('.nv_closer')
+    l.addEventListener('click', () => { bsCollapse.toggle() })
+})
+
+</script> -->
+
+</html>
