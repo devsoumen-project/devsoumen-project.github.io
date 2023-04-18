@@ -59,6 +59,7 @@
 	--y__ellow: var(--secondary_color-r), var(--secondary_color-g), var(--secondary_color-b);
 	--b__lack: rgba( calc(var(--primary_color-r) - 255), calc(var(--primary_color-g) - 255), calc(var(--primary_color-b) - 255), 1 );
 	--w__hite:  rgba( var(--primary_color-r), var(--primary_color-g), var(--primary_color-b), 1 );
+	--primary:  rgba( var(--primary_color-r), var(--primary_color-g), var(--primary_color-b), 1 );
 
   }
   
@@ -1833,7 +1834,7 @@ line-height: 1.5em; }
 }
 .login-form-1 h3{
     text-align: center;
-    color: rgba(var(--primary));
+    color: var(--w__hite);
 	margin-bottom: 2rem;
 }
 .login-form-2{
@@ -1863,6 +1864,9 @@ line-height: 1.5em; }
     font-weight: 600;
     color:   rgb( var(--secondary_color-r), var(--secondary_color-g), var(--secondary_color-b) );
     background: rgba(var(--primary));
+    background: var(--w__hite);
+	/* background:  var(--y__ellow); */
+
     /* background: rgba(var(--dark)); */
     /* background:   rgb( var(--secondary_color-r), var(--secondary_color-g), var(--secondary_color-b) ); */
 }
@@ -1878,7 +1882,7 @@ line-height: 1.5em; }
 }
 .login-form-1 .ForgetPwd{
     /* color: #0062cc; */
-	color: rgba(var(--primary));
+	color: var(--w__hite);
     font-weight: 600;
     text-decoration: none;
 }
@@ -1887,7 +1891,7 @@ line-height: 1.5em; }
     margin-bottom: 1rem;
 }
 .logn_lnk{
-	color: rgba(var(--primary));
+	color: var(--w__hite);
 }
 /* login e */
 
